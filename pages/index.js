@@ -51,7 +51,7 @@ export default function Home() {
   return (
     <div style={{ fontFamily: 'sans-serif', padding: '20px', backgroundColor: '#f9fafb', minHeight: '100vh', display: 'flex', gap: '20px' }}>
       
-      {/* MENU */}
+      {/* MENU LATERAL */}
       <div style={{ width: '230px', background: '#fff', padding: '15px', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.05)', height: 'fit-content' }}>
         <h3 style={{ color: '#16a34a', marginTop: 0 }}>🏪 Navegação</h3>
         <button onClick={() => { setPagina("loja"); setRecibo(null); }} style={{ width: '100%', padding: '10px', margin: '4px 0', cursor: 'pointer', background: '#f3f4f6', border: '1px solid #e5e7eb', borderRadius: '4px' }}>🛒 Compras</button>
@@ -148,3 +148,5 @@ export default function Home() {
                 {produtos.map((p, i) => (
                   <div key={i} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '6px 0', borderBottom: '1px solid #eee' }}>
                     <span>{p.nome} (<b>{p.estoque} un</b>)</span>
+
+                
